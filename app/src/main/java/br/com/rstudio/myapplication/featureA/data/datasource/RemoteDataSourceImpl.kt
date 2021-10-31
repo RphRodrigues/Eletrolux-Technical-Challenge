@@ -34,10 +34,10 @@ class RemoteDataSourceImpl(
     }
 
     private fun <T> handleRequest(response: Response<T>, transform: (T) -> Unit) {
-        if (response.isSuccessful) {
-            response.body()?.let { mapper.transform(it) } ?: throw Exception()
-        } else {
-            throw Exception()
-        }
+//        if (response.isSuccessful) {
+//            response.body()?.let { mapper.transform(it) } ?: throw Exception()
+//        } else {
+//            throw Exception()
+//        }
     }
 }

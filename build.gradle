@@ -21,6 +21,7 @@ ext {
     coroutines_version = '1.4.3'
     lifecycle_version = '2.4.0'
     converter_version = '2.4.0'
+    interceptor_version = '4.9.0'
 }
 
 allprojects {
