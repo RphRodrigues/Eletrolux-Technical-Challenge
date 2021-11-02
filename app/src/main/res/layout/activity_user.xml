@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".featureb.presentation.userlist.UserListActivity">
+    tools:context=".feature.presentation.userlist.UserListActivity">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle_view"
@@ -18,7 +18,7 @@
         tools:itemCount="10"
         tools:listitem="@layout/user_item_view" />
 
-    <br.com.rstudio.myapplication.featureb.presentation.view.LoadingView
+    <br.com.rstudio.myapplication.feature.presentation.view.LoadingView
         android:id="@+id/loading_view"
         android:layout_width="0dp"
         android:layout_height="0dp"

@@ -3,7 +3,7 @@ package br.com.rstudio.myapplication
 import android.app.Application
 import br.com.rstudio.myapplication.core.di.AppModule
 import br.com.rstudio.myapplication.core.di.NetworkingModule
-import br.com.rstudio.myapplication.featureb.di.UserModule
+import br.com.rstudio.myapplication.feature.di.UserModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin

@@ -16,7 +16,7 @@
         android:focusable="true"
         android:padding="@dimen/margin_grid_2">
 
-        <br.com.rstudio.myapplication.featureb.presentation.view.LoadImageView
+        <br.com.rstudio.myapplication.feature.presentation.view.LoadImageView
             android:id="@+id/image_view"
             android:layout_width="@dimen/image_width"
             android:layout_height="@dimen/image_height"
