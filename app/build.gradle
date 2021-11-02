@@ -23,10 +23,12 @@ android {
 
     buildTypes {
         debug {
+            buildConfigField "int", "CACHE_IN_MB", "5"
             buildConfigField "String", "BASE_URL", BASE_URL
         }
 
         release {
+            buildConfigField "int", "CACHE_IN_MB", "5"
             buildConfigField "String", "BASE_URL", BASE_URL
 
             minifyEnabled false

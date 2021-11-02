@@ -24,28 +24,31 @@ class UserListViewModel(
     private var _error = MutableLiveData<String>()
     val error: LiveData<String> = _error
 
-    fun loadUsers() = viewModelScope.launch {
-        runCatching {
-            loadUsersUseCase()
-        }.onSuccess { data ->
-            _users.value = data
-        }.onFailure { error ->
-            _error.value = error.message
+    private var _isLoading = MutableLiveData<Boolean>()
+    val isLoading: LiveData<Boolean> = _isLoading
 
-//            {
-//                "message":"API rate limit exceeded for 189.84.176.185. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)",
-//                "documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"
-//            }
+    fun loadUsers() {
+        handleRequest {
+            val data = loadUsersUseCase()
+            _users.value = data
         }
     }
 
-    fun loadUserDetails(id: Int) = viewModelScope.launch {
-        runCatching {
-            loadUserDetailsUseCase(id)
-        }.onSuccess { data ->
+    fun loadUserDetails(id: Int) {
+        handleRequest {
+            val data = loadUserDetailsUseCase(id)
             _user.value = data
-        }.onFailure { error ->
+        }
+    }
+
+    private fun handleRequest(doWork: suspend () -> Unit) = viewModelScope.launch {
+        try {
+            _isLoading.value = true
+            doWork()
+        } catch (error: Exception) {
             _error.value = error.message
+        } finally {
+            _isLoading.value = false
         }
     }
 }

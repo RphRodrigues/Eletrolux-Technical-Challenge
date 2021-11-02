@@ -1,7 +1,8 @@
 package br.com.rstudio.myapplication
 
 import android.app.Application
-import br.com.rstudio.myapplication.featureA.di.ProductsModule
+import br.com.rstudio.myapplication.core.di.AppModule
+import br.com.rstudio.myapplication.core.di.NetworkingModule
 import br.com.rstudio.myapplication.featureb.di.UserModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -16,7 +17,11 @@ class App : Application() {
         startKoin {
             androidLogger()
             androidContext(this@App)
-            modules(UserModule.module)
+            modules(
+                AppModule.module,
+                NetworkingModule.module,
+                UserModule.module
+            )
         }
     }
 

@@ -1,13 +1,13 @@
 package br.com.rstudio.myapplication.featureb.data.datasource
 
 import br.com.rstudio.myapplication.featureb.NetworkingException
-import br.com.rstudio.myapplication.featureb.data.api.ApiService
+import br.com.rstudio.myapplication.featureb.data.api.UserApiService
 import br.com.rstudio.myapplication.featureb.data.model.UserMapper
 import br.com.rstudio.myapplication.featureb.domain.model.UserDetailsModel
 import br.com.rstudio.myapplication.featureb.domain.model.UserModel
 
 class RemoteDataSource(
-    private val api: ApiService,
+    private val api: UserApiService,
     private val mapper: UserMapper
 ) : DataSource {
 

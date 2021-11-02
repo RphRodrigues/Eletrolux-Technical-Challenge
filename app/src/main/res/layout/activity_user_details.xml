@@ -16,14 +16,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:id="@+id/name"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin_grid_4"
         android:gravity="center"
+        android:text="@string/user_details_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_profile"
-        tools:text="User name" />
+        app:layout_constraintTop_toBottomOf="@id/image_profile" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/bio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_grid_4"
+        android:gravity="center"
+        android:text="@string/user_details_bio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

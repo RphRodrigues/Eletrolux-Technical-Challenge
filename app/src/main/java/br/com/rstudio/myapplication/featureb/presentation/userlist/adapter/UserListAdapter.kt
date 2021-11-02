@@ -1,13 +1,13 @@
 package br.com.rstudio.myapplication.featureb.presentation.userlist.adapter
 
-import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import br.com.rstudio.myapplication.R
+import br.com.rstudio.myapplication.core.ext.inflate
 import br.com.rstudio.myapplication.featureb.domain.model.UserModel
 import br.com.rstudio.myapplication.featureb.presentation.userlist.adapter.viewholder.UserViewHolder
 
-class UserAdapter(
+class UserListAdapter(
     private val onItemClickListener: (id: Int) -> Unit
 ) : RecyclerView.Adapter<UserViewHolder>() {
 
@@ -19,7 +19,7 @@ class UserAdapter(
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.user_item_view, parent, false)
+        val view = parent.inflate(R.layout.user_item_view)
         return UserViewHolder(view)
     }
 

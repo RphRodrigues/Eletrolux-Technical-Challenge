@@ -14,5 +14,4 @@ class UserDetailsViewModel : ViewModel() {
     fun init(user: UserDetailsModel) {
         _user.value = user
     }
-
 }

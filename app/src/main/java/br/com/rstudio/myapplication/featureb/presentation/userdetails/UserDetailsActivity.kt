@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.widget.TextView
 import br.com.rstudio.myapplication.R
 import br.com.rstudio.myapplication.featureb.domain.model.UserDetailsModel
-import br.com.rstudio.myapplication.featureb.domain.model.UserModel
 import br.com.rstudio.myapplication.featureb.presentation.view.LoadImageView
 import org.koin.android.viewmodel.ext.android.viewModel
 
@@ -15,7 +14,8 @@ class UserDetailsActivity : AppCompatActivity() {
 
     private val viewModel by viewModel<UserDetailsViewModel>()
 
-    private lateinit var textView: TextView
+    private lateinit var bioView: TextView
+    private lateinit var nameView: TextView
     private lateinit var imageProfileView: LoadImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,7 +28,8 @@ class UserDetailsActivity : AppCompatActivity() {
     }
 
     private fun setupViews() {
-        textView = findViewById(R.id.textView)
+        bioView = findViewById(R.id.bio)
+        nameView = findViewById(R.id.name)
         imageProfileView = findViewById(R.id.image_profile)
     }
 
@@ -44,8 +45,13 @@ class UserDetailsActivity : AppCompatActivity() {
     }
 
     private fun bindUserDetails(user: UserDetailsModel) {
-        textView.text = user.bio
+        bioView.text = getString(R.string.user_details_bio, user.bio.getOrDefault())
+        nameView.text = getString(R.string.user_details_name, user.name.getOrDefault())
         imageProfileView.load(user.avatarUrl)
+    }
+
+    private fun String?.getOrDefault(): String {
+        return this ?: getString(R.string.description_unknown)
     }
 
     companion object {

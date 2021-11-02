@@ -8,7 +8,7 @@
     android:layout_marginVertical="@dimen/margin_grid_1">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/contentView"
+        android:id="@+id/content_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="?android:attr/selectableItemBackground"
@@ -17,7 +17,7 @@
         android:padding="@dimen/margin_grid_2">
 
         <br.com.rstudio.myapplication.featureb.presentation.view.LoadImageView
-            android:id="@+id/imageView"
+            android:id="@+id/image_view"
             android:layout_width="@dimen/image_width"
             android:layout_height="@dimen/image_height"
             android:contentDescription=""
@@ -26,14 +26,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/labelView"
+            android:id="@+id/label_view"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/margin_grid_4"
             android:layout_marginEnd="@dimen/margin_grid_4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/imageView"
+            app:layout_constraintStart_toEndOf="@id/image_view"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="User name" />
 

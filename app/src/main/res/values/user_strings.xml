@@ -1,0 +1,4 @@
+<resources>
+    <string name="user_details_bio">Bio: %s</string>
+    <string name="user_details_name">Name: %s</string>
+</resources>

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Electrolux Application Test</string>
+    <string name="description_unknown">Unknown</string>
 </resources>
