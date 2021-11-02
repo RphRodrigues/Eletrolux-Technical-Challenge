@@ -1,6 +1,6 @@
 package br.com.rstudio.myapplication.feature.data.datasource
 
-import br.com.rstudio.myapplication.feature.NetworkingException
+import br.com.rstudio.myapplication.core.NetworkingException
 import br.com.rstudio.myapplication.feature.data.api.UserApiService
 import br.com.rstudio.myapplication.feature.data.model.UserMapper
 import br.com.rstudio.myapplication.feature.domain.model.UserDetailsModel

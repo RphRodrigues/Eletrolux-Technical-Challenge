@@ -1,4 +1,4 @@
-package br.com.rstudio.myapplication.feature.presentation.view
+package br.com.rstudio.myapplication.core.view
 
 import android.content.Context
 import android.util.AttributeSet

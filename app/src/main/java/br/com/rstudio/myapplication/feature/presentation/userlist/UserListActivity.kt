@@ -10,7 +10,7 @@ import br.com.rstudio.myapplication.feature.domain.model.UserDetailsModel
 import br.com.rstudio.myapplication.feature.domain.model.UserModel
 import br.com.rstudio.myapplication.feature.presentation.userdetails.UserDetailsActivity
 import br.com.rstudio.myapplication.feature.presentation.userlist.adapter.UserListAdapter
-import br.com.rstudio.myapplication.feature.presentation.view.LoadingView
+import br.com.rstudio.myapplication.core.view.LoadingView
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class UserListActivity : AppCompatActivity() {

@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     tools:context=".feature.presentation.userdetails.UserDetailsActivity">
 
-    <br.com.rstudio.myapplication.feature.presentation.view.LoadImageView
+    <br.com.rstudio.myapplication.core.view.LoadImageView
         android:id="@+id/image_profile"
         android:layout_width="0dp"
         android:layout_height="0dp"

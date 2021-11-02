@@ -7,7 +7,7 @@ import android.os.Bundle
 import android.widget.TextView
 import br.com.rstudio.myapplication.R
 import br.com.rstudio.myapplication.feature.domain.model.UserDetailsModel
-import br.com.rstudio.myapplication.feature.presentation.view.LoadImageView
+import br.com.rstudio.myapplication.core.view.LoadImageView
 import org.koin.android.viewmodel.ext.android.viewModel
 
 class UserDetailsActivity : AppCompatActivity() {

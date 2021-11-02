@@ -6,7 +6,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import br.com.rstudio.myapplication.R
 import br.com.rstudio.myapplication.feature.domain.model.UserModel
-import br.com.rstudio.myapplication.feature.presentation.view.LoadImageView
+import br.com.rstudio.myapplication.core.view.LoadImageView
 
 class UserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
