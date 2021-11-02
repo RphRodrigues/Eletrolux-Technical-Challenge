@@ -7,13 +7,13 @@
     <application
         android:name=".App"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_electrolux_logo"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/network_security_config"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_electrolux_logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".feature.presentation.userdetails.UserDetailsActivity"></activity>
+
         <activity android:name=".feature.presentation.userlist.UserListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,8 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".featureA.presentation.productslist.ProductListActivity"></activity>
-        <activity android:name=".featureA.presentation.productdetails.ProductDetailsActivity" />
+
+        <activity android:name=".feature.presentation.userdetails.UserDetailsActivity" />
     </application>
 
 </manifest>
