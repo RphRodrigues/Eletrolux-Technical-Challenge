@@ -25,6 +25,7 @@ ext {
     converter_version = '2.4.0'
     interceptor_version = '4.9.1'
     core_testing_version = '2.1.0'
+    glide_version = '4.12.0'
 }
 
 allprojects {

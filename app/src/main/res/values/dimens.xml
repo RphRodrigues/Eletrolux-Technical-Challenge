@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="margin_default">16dp</dimen>
+    <dimen name="margin_grid_1">8dp</dimen>
+    <dimen name="margin_grid_2">10dp</dimen>
+    <dimen name="margin_grid_3">12dp</dimen>
+    <dimen name="margin_grid_4">16dp</dimen>
+
+    <dimen name="image_width">50dp</dimen>
+    <dimen name="image_height">50dp</dimen>
 </resources>

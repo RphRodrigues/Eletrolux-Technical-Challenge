@@ -10,6 +10,6 @@
         android:id="@+id/titleView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin_default"
+        android:layout_margin="@dimen/margin_grid_4"
         tools:text="Produto 1" />
 </merge>
