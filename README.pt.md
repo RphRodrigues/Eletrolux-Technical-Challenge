@@ -17,8 +17,8 @@ O desafio principal foi construir um aplicativo que se integra com a API do GitH
 *   **Listagem de Usuários**: Exibe uma lista de usuários do GitHub obtida através da API do GitHub.
 *   **Detalhes do Usuário**: Mostra informações mais detalhadas para um usuário selecionado, incluindo:
     *   Avatar/Foto de Perfil
-    *   Nome (se disponível)
-    *   Bio (se disponível)
+    *   Nome 
+    *   Bio
 *   **Carregamento de Imagens**: Carrega e exibe avatares de usuários de forma eficiente usando Glide.
 *   **Clean Architecture**: Estruturado seguindo os princípios da Clean Architecture para promover separação de responsabilidades, testabilidade e manutenibilidade.
 

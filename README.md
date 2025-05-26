@@ -17,8 +17,8 @@ The core challenge was to build an app that integrates with the GitHub API to:
 *   **User Listing**: Displays a list of GitHub users fetched from the GitHub API.
 *   **User Details**: Shows more detailed information for a selected user, including:
     *   Avatar/Profile Picture
-    *   Name (if available)
-    *   Bio (if available)
+    *   Name
+    *   Bio
 *   **Image Loading**: Efficiently loads and displays user avatars using Glide.
 *   **Clean Architecture**: Structured following Clean Architecture principles to promote separation of concerns, testability, and maintainability.
 
